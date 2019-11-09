@@ -1,3 +1,5 @@
+@import './variable.scss';
+
 html {
   height: 100%;
 }
@@ -47,7 +49,7 @@ h6 {
 a {
   color: inherit;
   text-decoration: none;
-  color: #606266;
+  color: $text-color;
   &:hover {
     text-decoration: none;
     color: #409eff;
@@ -82,11 +84,36 @@ body {
 .header i[class^='el-icon'] {
   color: $text-color;
 }
-#app .clearFixed:after {
+#app .clearFixed:after {  
+  // 作用未知
   content: '';
   display: block;
   width: 0;
   height: 0;
   clear: both;
   visibility: hidden;
+}
+.loginCon .el-input__inner {
+  // background: rgba(0, 0, 0, 0.1);
+  background: #fff;
+  height: 50px;
+  outline: none;
+  color: $text-color;
+  border: none;
+}
+.loginCon .el-form-item {
+  // border: 1px solid hsla(0, 0%, 100%, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+}
+.marginLeft {
+  margin-left: 64px !important;
+}
+.el-notification {
+  .el-icon-s-opportunity {
+    color: #ffc107;
+    font-size: 22px;
+    margin-top: 2px;
+  }
 }

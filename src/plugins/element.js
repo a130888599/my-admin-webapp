@@ -4,6 +4,6 @@ import 'element-ui/lib/theme-chalk/index.css';
 
 Vue.use(ElementUI)
 
-Vue.prototype.$message = Message
-Vue.prototype.$confirm = MessageBox.confirm
-Vue.prototype.$notify = Notification
+Vue.prototype.$message = ElementUI.Message
+Vue.prototype.$confirm = ElementUI.MessageBox.confirm
+Vue.prototype.$notify = ElementUI.Notification
